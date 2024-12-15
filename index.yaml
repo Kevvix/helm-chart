@@ -1,0 +1,11 @@
+apiVersion: v1
+entries:
+  http-static-server:
+    - created: "2024-12-15T14:26:00Z"
+      description: "Description de mon chart"
+      home: "https://github.com/Kevvix/helm-chart"
+      name: "http-static-server"
+      sources:
+      - https://github.com/Kevvix/helm-chart
+      version: "1.0.0"
+generated: "2024-12-15T14:26:00Z"
