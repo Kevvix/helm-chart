@@ -1,0 +1,17 @@
+# Nom de l'application (obligatoire, ex : app-a)
+# Un deployment, un service et un ingress seront créés avec ce nom dans kubernenetes
+appName: 
+
+# Nom de l'image à récupérer du container registry (obligatoire, ex : c8n.io/kevin-leduc/app-a-server:latest)
+# Préalablement, l'image doit être déposée dans le container registry l'aide du pipeline AzureDevOps
+image: 
+
+# URL pour accéder à l'application (obligatoire, ex : MONAPPLICATION.kapydata.com)
+# Le nom de domaine principal ne peut pas être changé, uniquement le sous-domaine
+host: 
+
+# Nom du secret crée qui va contenir le certificats TLS de l'application (obligatoire, doit être unique par application)
+# Le certificat sera crée automatiquement par cert-manager lors de la création de l'ingress
+# Le secret sera utilisé par l'ingress pour servir l'application en HTTPS
+# Il sera valide pour le nom de domaine spécifié dans le champ host
+tlsSecret: 
