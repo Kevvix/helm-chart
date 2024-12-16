@@ -3,13 +3,13 @@ entries:
   http-static-server-2w5:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-15T14:37:44.5150136-05:00"
+    created: "2024-12-15T21:57:44.7006096-05:00"
     description: A Helm chart for creating a simple HTTP static server using Nginx
       and Docker on my Kubernetes cluster
-    digest: 194809efdbaab55aef464728afa59eaf694840eba620b5242cb020659b4b8a37
+    digest: 44ab203fc97c75a006970ff2e9050af603f816dcab2c6f2a94cb62247b946b0a
     name: http-static-server-2w5
     type: application
     urls:
     - http-static-server-2w5-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-15T14:37:44.5140125-05:00"
+generated: "2024-12-15T21:57:44.6996124-05:00"
