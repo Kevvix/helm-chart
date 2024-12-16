@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.appName }}-deployment
+  annotations:
+    timestamp: {{ now | quote }}
 spec:
   selector:
     matchLabels:
@@ -9,9 +11,6 @@ spec:
   replicas: 1
   template:
     metadata:
-      creator: KevinL
-      annotations:
-        timestamp: {{ now | quote }}
       labels:
         app: {{ .Values.appName }}
     spec:
