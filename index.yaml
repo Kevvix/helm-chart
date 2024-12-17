@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   asp-net-mvc-server-2w5:
   - apiVersion: v2
+    appVersion: 1.19.0
+    created: "2024-12-16T22:42:41.2311203-05:00"
+    description: A Helm chart for creating a simple ASP.NET server and Docker on my
+      Kubernetes cluster
+    digest: 8f109554689a2849dec2c6d3f351ed002141b222e5d5068bb63681e9df8dc4a4
+    name: asp-net-mvc-server-2w5
+    type: application
+    urls:
+    - asp-net-mvc-server-2w5-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     appVersion: 1.18.0
-    created: "2024-12-16T22:38:09.245232-05:00"
+    created: "2024-12-16T22:42:41.2301198-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 060e78e1cb97eb14b44d6ed6be17019f52e923ee7f53c35ff072ec486a8b062a
@@ -14,7 +25,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2024-12-16T22:38:09.2447145-05:00"
+    created: "2024-12-16T22:42:41.2301198-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 59c2c6c76920c968c405a51e99be85e76a47cbb650fbd083337f242d82933a78
@@ -25,7 +36,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2447145-05:00"
+    created: "2024-12-16T22:42:41.2291194-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 94a0eb647f8f4c7fb639b0ae8380137f1b1442550ce76b144695b4e4beffaef2
@@ -36,7 +47,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2441786-05:00"
+    created: "2024-12-16T22:42:41.2291194-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: d2d4aa902f39e6ba0716cd4b3a8515aff30a77c139ebe83c1e800c846328cb15
@@ -47,7 +58,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2431497-05:00"
+    created: "2024-12-16T22:42:41.2291194-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 0efa33e6249045857691fea8cf9c9d1c301d4bc88f93d298ddd0ff0adec69d01
@@ -58,7 +69,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2426321-05:00"
+    created: "2024-12-16T22:42:41.2281188-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 4646ccf6adfc4cd59bfb520aa7b435594d37b5f90f8138faee98473afdd1cdce
@@ -69,7 +80,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2421146-05:00"
+    created: "2024-12-16T22:42:41.2281188-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: 490209a27a6f87411b2e1be456531af11efb58a7e51ec0cdb4336f9ea498c6ed
@@ -80,7 +91,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.241599-05:00"
+    created: "2024-12-16T22:42:41.2271194-05:00"
     description: A Helm chart for creating a simple ASP.NET server and Docker on my
       Kubernetes cluster
     digest: f9cf055f1207ce560e10fb31fae31518cbe9b7f7d995d2352f7f804d25285425
@@ -92,7 +103,7 @@ entries:
   http-static-server-2w5:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2478397-05:00"
+    created: "2024-12-16T22:42:41.2331197-05:00"
     description: A Helm chart for creating a simple HTTP static server using Nginx
       and Docker on my Kubernetes cluster
     digest: 92901b5bf73aa6444278f67cd5e2e851626ba2a564584c69b6b9a457086061bc
@@ -103,7 +114,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2467981-05:00"
+    created: "2024-12-16T22:42:41.2321196-05:00"
     description: A Helm chart for creating a simple HTTP static server using Nginx
       and Docker on my Kubernetes cluster
     digest: a3fa47226eb6e5363a081e7de85f555198b90497ee2b47783d7818612eabef5d
@@ -114,7 +125,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2462877-05:00"
+    created: "2024-12-16T22:42:41.2321196-05:00"
     description: A Helm chart for creating a simple HTTP static server using Nginx
       and Docker on my Kubernetes cluster
     digest: 7e137d9b14ab0af0efd6630c00b054513f1149c3e8f88b8e8d8c2e4338453b6a
@@ -125,7 +136,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-16T22:38:09.2457702-05:00"
+    created: "2024-12-16T22:42:41.2311203-05:00"
     description: A Helm chart for creating a simple HTTP static server using Nginx
       and Docker on my Kubernetes cluster
     digest: 44ab203fc97c75a006970ff2e9050af603f816dcab2c6f2a94cb62247b946b0a
@@ -134,4 +145,4 @@ entries:
     urls:
     - http-static-server-2w5-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-16T22:38:09.2389956-05:00"
+generated: "2024-12-16T22:42:41.2261189-05:00"
