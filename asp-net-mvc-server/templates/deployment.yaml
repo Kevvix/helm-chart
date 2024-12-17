@@ -5,16 +5,21 @@ metadata:
   annotations:
     timestamp: {{ now | quote }}
     annotations:
-    prometheus.io/scrape: "true"
-    prometheus.io/path: "/metrics"
-    prometheus.io/port: "8080"
+      prometheus.io/scrape: "true"
+      prometheus.io/path: "/metrics"
+      prometheus.io/port: "8080"
 spec:
   selector:
     matchLabels:
+
       app: {{ .Values.appName }}
   replicas: 1
   template:
     metadata:
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/metrics"
+        prometheus.io/port: "8080"
       labels:
         app: {{ .Values.appName }}
     spec:
