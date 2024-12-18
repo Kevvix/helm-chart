@@ -1,17 +1,20 @@
-# Nom de l'application (obligatoire, ex : app-a)
-# Un deployment, un service et un ingress seront créés avec ce nom dans kubernenetes
-appName: 
+# Nom de l'image à récupérer du registre d'image.
+# Le nom de l'image doit être cohérant avec la branche de l'application.
+# Exemples : 
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:latest
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:hotfix-1.0.0
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:release-1.0.0
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:develop
+#   c8n.io/kevin-leduc/NOM_DU_DEPOT_GIT:feature-add-user-profile
+image: "" # obligatoire
 
-# Nom de l'image à récupérer du container registry (obligatoire, ex : c8n.io/kevin-leduc/app-a-server:latest)
-# Préalablement, l'image doit être déposée dans le container registry l'aide du pipeline AzureDevOps
-image: 
-
-# URL pour accéder à l'application (obligatoire, ex : MONAPPLICATION.kapydata.com)
-# Le nom de domaine principal ne peut pas être changé, uniquement le sous-domaine
-host: 
-
-# Nom du secret crée qui va contenir le certificats TLS de l'application (obligatoire, doit être unique par application)
-# Le certificat sera crée automatiquement par cert-manager lors de la création de l'ingress
-# Le secret sera utilisé par l'ingress pour servir l'application en HTTPS
-# Il sera valide pour le nom de domaine spécifié dans le champ host
-tlsSecret: 
+# URL pour accéder à l'application.
+# Le nom de domaine principal ne peut pas être changé (kapydata.com), uniquement le sous-domaine.
+# Le nom de l'URL doit être cohérant avec la branche de l'application.
+# Exemples : 
+#   mon-app.kapydata.com
+#   mon-app-hotfix.kapydata.com
+#   mon-app-release.kapydata.com
+#   mon-app-develop.kapydata.com
+#   mon-app-feature-add-user-profile.kapydata.com
+host: "" # obligatoire

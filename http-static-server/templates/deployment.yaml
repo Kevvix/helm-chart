@@ -1,23 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.appName }}-deployment
+  name: {{ .Release.Name }}-deployment
   annotations:
     timestamp: {{ now | quote }}
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.appName }}
+      app: {{ .Release.Name }}
   replicas: 1
   template:
     metadata:
       labels:
-        app: {{ .Values.appName }}
+        app: {{ .Release.Name }}
     spec:
       containers:
-      - name: {{ .Values.appName }}
+      - name: {{ .Release.Name }}
         image: {{ .Values.image }}
         ports:
         - containerPort: 80
       imagePullSecrets:
       - name: c8n-registry-secret
+      resources:
+        requests:
+          memory: "64Mi"  # Minimum de mémoire allouée
+          cpu: "50m"      # Minimum de CPU alloué
+        limits:
+          memory: "128Mi"  # Limite de mémoire allouée
+          cpu: "100m"      # Limite de CPU allouée
